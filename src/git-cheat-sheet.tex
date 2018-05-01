@@ -61,555 +61,411 @@
 \fancyfoot{} % Set footer to blank
 \fancyhead[L]{
 \noindent
-\begin{multicols}{3}
-% \begin{tabulary}{5.8cm}{C}
-%     \SetRowColor{DarkBackground}
-%     \vspace{-7pt}
-%     {\parbox{\dimexpr\textwidth-2\fboxsep\relax}{\noindent
-%         \hspace*{-6pt}\includegraphics[width=5.8cm]{logo.png}}
-%     }
-% \end{tabulary}
-\columnbreak
+\begin{multicols}{1}
 \begin{tabulary}{5cm}{L}
     \vspace{-2pt}\large{\bf{\textcolor{DarkBackground}{\textrm{Git Cheat Sheet}}}} \\
 \end{tabulary}
 \end{multicols}}
 
-% \fancyfoot[L]{ \footnotesize
-% \noindent
-% \begin{multicols}{3}
-% \begin{tabulary}{5.8cm}{LL}
-%   \SetRowColor{FootBackground}
-%   \mymulticolumn{2}{p{5.377cm}}{\bf\textcolor{white}{Cheatographer}}  \\
-%   \vspace{-2pt}Michele Sacchetti (mikesac) \\
-%   \uline{cheatography.com/mikesac} \\
-%         \uline{\seqsplit{aroundthecode}.org}
-%   \end{tabulary}
-% \vfill
-% \columnbreak
-% \begin{tabulary}{5.8cm}{L}
-%   \SetRowColor{FootBackground}
-%   \mymulticolumn{1}{p{5.377cm}}{\bf\textcolor{white}{Cheat Sheet}}  \\
-%    \vspace{-2pt}Published 5th February, 2017.\\
-%    Updated 13th February, 2017.\\
-%    Page {\thepage} of \pageref{LastPage}.
-% \end{tabulary}
-% \vfill
-% \columnbreak
-% \begin{tabulary}{5.8cm}{L}
-%   \SetRowColor{FootBackground}
-%   \mymulticolumn{1}{p{5.377cm}}{\bf\textcolor{white}{Sponsor}}  \\
-%   \SetRowColor{white}
-%   \vspace{-5pt}
-%   %\includegraphics[width=48px,height=48px]{dave.jpeg}
-%   Measure your website readability!\\
-%   www.readability-score.com
-% \end{tabulary}
-% \end{multicols}}
-
-
-
-
 \begin{document}
-\raggedright
-\raggedcolumns
-
-% Set font size to small. Switch to any value
-% from this page to resize cheat sheet text:
-% www.emerson.emory.edu/services/latex/latex_169.html
-\footnotesize % Small font.
-%\includegraphics[height=5cm]{git_flow.png}
-\begin{multicols*}{3}
-% FEATURE FLOW
-\begin{tabularx}{5.377cm}{X}
-\SetRowColor{DarkBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf\textcolor{white}{Command}}  \tn
-% Row 0
-\SetRowColor{TitleBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf{Observe your Repository}} \tn
-% Row 1
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{List new or modified files not yet
-committed}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{s}ta\textcolor{red}{t}us}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Show the changes to files not yet staged}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{d}iff}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Show full change history}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{l}og}} \tn
-
-\end{tabularx}
-
-
-\begin{tabularx}{5.377cm}{X}
-% Row 0
-\SetRowColor{TitleBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf{Synchronize}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Get the latest changes from origin
-(no merge)}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{fetch}}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Fetch the latest changes from origin
-and merge}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{pull}}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Fetch the latest changes from origin
-and rebase}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{pull} --\textcolor{red}{r}ebase}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Push local changes to the origin}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push}}} \tn
-
-\end{tabularx}
-
-\begin{tabularx}{5.377cm}{X}
-
-% Row 0
-\SetRowColor{TitleBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf{Working with Branches}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{List all local branches }}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{List all branches, local and remote}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch -av}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Create a new branch called my-branch}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch \emph{my-branch}}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Switch to a branch and update working directory}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut \emph{branch-name}}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Delete the branch called my-branch}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch -d \emph{my-branch}}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Merge branch a into branch-b}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut \emph{branch-b}}} \tn
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{m}erge \emph{branch-a}}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Tag the current commit}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{ git tag my-tag}} \tn
-
-
-\end{tabularx}
-
-
-\begin{tabularx}{5.377cm}{X}
-
-
-% Row 0
-\SetRowColor{TitleBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf{Make a change}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Stages the file, ready for commit}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{a}dd [file]}} \tn
-
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Commit all staged files to versioned history}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}ommit -\textcolor{red}{m} "commit message"}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Unstages file, keeping the file changes}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{r}eset [file]}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Undoes all commits afer [commit], preserving change locally}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{r}eset [commit]}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Discards all history and changes back to the specified commit}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{r}eset --hard [commit]}} \tn
-\end{tabularx}
-
-
-\begin{tabularx}{5.377cm}{X}
-
-% Row 0
-\SetRowColor{TitleBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf{Save fragments}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Lists all stashed changesets}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash l}ist}} \tn
-
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Temporarily stores all modified tracked files}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash}}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Temporarily stores all modified tracked files with a stash name}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash s}a\textcolor{red}{v}e "stash-name"}} \tn
-
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Details stash number 'n'}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash sh}ow stash@\{n\} -p}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Restores stash  number 'n'}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash a}pply stash@\{n\}}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Discards stash  number 'n'}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash d}rop stash@\{n\}}} \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{Restores the most recently stashed files }}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash p}op}} \tn
-
-\hhline{>{\arrayrulecolor{DarkBackground}}-}
-\end{tabularx}
-
-\par\addvspace{1.3em}
-
-\begin{tabularx}{5.377cm}{X}
-\SetRowColor{DarkBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf\textcolor{white}{Oh Shit, Git!}}  \tn
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{I did something terribly wrong, please tell me git has a magic time machine!?!}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{r}ef\textcolor{red}{l}og}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\emph{
-\# you will see a list of every thing you've done in git, across all branches! \\
-\# each one has an index HEAD@\{index\} \\
-\# find the one before you broke everything}}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{r}eset HEAD@\{index\}}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\emph{\# magic time machine}}} \tn
-
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{I committed and immediately realized I need to make one small change!}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\emph{\# make your change}}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{a}dd . \# or add individual files}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}ommit --\textcolor{red}{a}mend }} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\emph{\# follow prompts to change or keep the commit message \\
-\# now your last commit contains that change!}}} \tn
-
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{I need to change the message on my last commit!}}} \tn
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}ommit --\textcolor{red}{a}mend }} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\emph{\# follow prompts to change or keep the commit message}}} \tn
-
-
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{I accidentally committed something to master that should have been on a brand new branch!}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\emph{\# create a new branch from the current state of master}}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch \emph{branch-name}}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\emph{\# remove the commit from the master branch}}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{r}eset HEAD\~ --hard }} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heckout \emph{branch-name}}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\emph{\# your commit lives in this branch now}}} \tn
-
-
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\bf{I accidentally committed to the wrong branch!}}} \tn
-% Row 2
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\emph{\# undo the last commit, but leave the changes available}}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{r}eset HEAD\~ --soft}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash}}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\emph{\# move to the correct branch}}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heckout \emph{branch-name}}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash p}op}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{a}dd . \emph{\# or add individual files}}} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}ommit -\textcolor{red}{m} "your message here" }} \tn
-\mymulticolumn{1}{x{5.377cm}}{{\emph{\# now your changes are on the correct branch}}} \tn
-
-
-
-
-
-
-
-
-
-\hhline{>{\arrayrulecolor{DarkBackground}}-}
-\end{tabularx}
-\par\addvspace{1.3em}
-% FEATURE FLOW
-\begin{tabularx}{5.377cm}{X}
-\SetRowColor{DarkBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf\textcolor{white}{Feature Flow}}  \tn
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{p{5.377cm}}{\vspace{1px}\centerline{\includegraphics[width=5.1cm]{feature.PNG}}} \tn
-\hhline{>{\arrayrulecolor{DarkBackground}}-}
-% Row 0
-\SetRowColor{TitleBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf{Feature start}} \tn
-% Row 1
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut develop}} \tn
-% Row 2
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{pull} --\textcolor{red}{r}ebase origin develop}} \tn
-% Row 3
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut  -b feature/{\emph{nomfeature}}}} \tn
-% Row 4
-\SetRowColor{TitleBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf{Feature Share}} \tn
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin feature/\emph{nomfeature}}} \tn
-% Row 5
-\SetRowColor{TitleBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf{Feature finish}} \tn
-% Row 6
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut develop}} \tn
-% Row 7
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{m}erge --\textcolor{red}{no}-\textcolor{red}{ff} feature/{\emph{nomefeature}}}} \tn
-% Row 8
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch -d feature/{\emph{nomefeature}}}} \tn
-% Row 9
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin develop}} \tn
-% Row 10
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin :feature/{\emph{nomefeature}} (if pushed)}} \tn
-\hhline{>{\arrayrulecolor{DarkBackground}}-}
-\end{tabularx}
-\par\addvspace{1.3em}
-
-% \begin{tabularx}{5.377cm}{X}
-% \SetRowColor{DarkBackground}
-% \mymulticolumn{1}{x{5.377cm}}{\bf\textcolor{white}{Release Version conventions}}  \tn
-% \SetRowColor{LightBackground}
-% \mymulticolumn{1}{p{5.377cm}}{\vspace{1px}\centerline{\includegraphics[width=5.1cm]{flow.PNG}}} \tn
-% \hhline{>{\arrayrulecolor{DarkBackground}}-}
-% \end{tabularx}
-% \par\addvspace{1.3em}
-
-
-\begin{tabularx}{5.377cm}{X}
-\SetRowColor{DarkBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf\textcolor{white}{Hofix Flow}}  \tn
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{p{5.377cm}}{\vspace{1px}\centerline{\includegraphics[width=5.1cm]{hotfix.PNG}}} \tn
-\hhline{>{\arrayrulecolor{DarkBackground}}-}
-% Row 0
-
-%
-%
-
-% Row 0
-\SetRowColor{TitleBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf{Hotfix start}} \tn
-% Row 1
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut develop}} \tn
-% Row 2
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{pull} --\textcolor{red}{r}ebase origin develop}} \tn
-% Row 3
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut -b hotfix/{\emph{hotfix-version}} }} \tn
-
-\SetRowColor{TitleBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf{Hotfix finish}} \tn
-% Row 5
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut master} \tn
-% Row Count 9 (+ 2)
-% Row 7
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{m}erge --\textcolor{red}{no}-\textcolor{red}{ff} hotfix/\emph{hotfix-version}}} \tn
-% Row Count 11 (+ 2)
-% Row 8
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{git tag -a {\emph{hotfix-version}} }} \tn
-% Row Count 12 (+ 1)
-% Row 9
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut develop}} \tn
-% Row Count 13 (+ 1)
-% Row 10
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{m}erge --\textcolor{red}{no}-\textcolor{red}{ff} hotfix/\emph{hotfix-version}}} \tn
-% Row Count 15 (+ 1)
-% Row 12
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch -d hotfix/\emph{hotfix-version}}} \tn
-% Row Count 17 (+ 2)
-% Row 13
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin master}} \tn
-% Row Count 18 (+ 1)
-% Row 14
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin develop}} \tn
-% Row Count 19 (+ 1)
-% Row 15
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin --tags}} \tn
-% Row Count 20 (+ 1)
-% Row 16
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin :hotfix/\emph{hotfix-version} (if pushed)}} \tn
-
-% Row Count 2 (+ 2)
-\hhline{>{\arrayrulecolor{DarkBackground}}-}
-\end{tabularx}
-\par\addvspace{1.3em}
-
-
-% RELEASE
-\begin{tabularx}{5.377cm}{X}
-\SetRowColor{DarkBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf\textcolor{white}{Release Flow}}  \tn
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{p{5.377cm}}{\vspace{1px}\centerline{\includegraphics[width=5.1cm]{release.PNG}}} \tn
-\hhline{>{\arrayrulecolor{DarkBackground}}-}
-% Row 0
-\SetRowColor{TitleBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf{Release start}} \tn
-% Row 1
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut develop}} \tn
-% Row 2
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{pull} --\textcolor{red}{r}ebase origin develop}} \tn
-% Row 3
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut -b release/{\emph{release-version}} }} \tn
-
-\SetRowColor{TitleBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf{Release Share}} \tn
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin feature/\emph{release-version}}} \tn
-
-% Row 4
-\SetRowColor{TitleBackground}
-\mymulticolumn{1}{x{5.377cm}}{\bf{Release finish}} \tn
-% Row 5
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut master} \tn
-% Row Count 9 (+ 2)
-% Row 7
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{m}erge --\textcolor{red}{no}-\textcolor{red}{ff} release/\emph{release-version}}} \tn
-% Row Count 11 (+ 2)
-% Row 8
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{git tag -a {\emph{release-version}} }} \tn
-% Row Count 12 (+ 1)
-% Row 9
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut develop}} \tn
-% Row Count 13 (+ 1)
-% Row 10
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{m}erge --\textcolor{red}{no}-\textcolor{red}{ff} release/\emph{release-version}}} \tn
-% Row Count 15 (+ 1)
-% Row 12
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch -d release/\emph{release-version}}} \tn
-% Row Count 17 (+ 2)
-% Row 13
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin master}} \tn
-% Row Count 18 (+ 1)
-% Row 14
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin develop}} \tn
-% Row Count 19 (+ 1)
-% Row 15
-\SetRowColor{white}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin --tags}} \tn
-% Row Count 20 (+ 1)
-% Row 16
-\SetRowColor{LightBackground}
-\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin :release/\emph{release-version} (if pushed)}} \tn
-\end{tabularx}
-\par\addvspace{1.3em}
-
-%\vfill
-%\columnbreak
-
-
-
-% That's all folks
-\end{multicols*}
+	\raggedright
+	\raggedcolumns
+	\footnotesize
+	\begin{multicols*}{3}
+	
+		% Command
+		\begin{tabularx}{5.377cm}{X}
+			\SetRowColor{DarkBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf\textcolor{white}{Command}}  \tn
+			
+			\SetRowColor{TitleBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf{Observe your Repository}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{List new or modified files not yet
+			committed}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{s}ta\textcolor{red}{t}us}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Show the changes to files not yet staged}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{d}iff}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Show full change history}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{l}og}} \tn
+		\end{tabularx}
+		
+		\begin{tabularx}{5.377cm}{X}
+			\SetRowColor{TitleBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf{Synchronize}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Get the latest changes from origin
+			(no merge)}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{fetch}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Fetch the latest changes from origin
+			and merge}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{pull}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Fetch the latest changes from origin
+			and rebase}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{pull} --\textcolor{red}{r}ebase}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Push local changes to the origin}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push}}} \tn
+		\end{tabularx}
+		
+		\begin{tabularx}{5.377cm}{X}
+		
+			\SetRowColor{TitleBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf{Working with Branches}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{List all local branches }}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{List all branches, local and remote}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch -av}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Create a new branch called my-branch}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch \emph{my-branch}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Switch to a branch and update working directory}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut \emph{branch-name}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Delete the branch called my-branch}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch -d \emph{my-branch}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Merge branch-a into branch-b}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut \emph{branch-b}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{m}erge \emph{branch-a}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Tag the current commit}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{ git tag my-tag}} \tn
+		\end{tabularx}
+		
+		\begin{tabularx}{5.377cm}{X}
+			\SetRowColor{TitleBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf{Make a change}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Stages the file, ready for commit}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{a}dd [file]}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Commit all staged files to versioned history}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}ommit -\textcolor{red}{m} "commit message"}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Unstages file, keeping the file changes}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{r}eset [file]}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Undoes all commits afer [commit], preserving change locally}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{r}eset [commit]}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Discards all history and changes back to the specified commit}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{r}eset --hard [commit]}} \tn
+		\end{tabularx}
+		
+		
+		\begin{tabularx}{5.377cm}{X}
+			\SetRowColor{TitleBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf{Save fragments}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Lists all stashed changesets}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash l}ist}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Temporarily stores all modified tracked files}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Temporarily stores all modified tracked files with a stash name}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash s}a\textcolor{red}{v}e "stash-name"}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Details stash number 'n'}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash sh}ow stash@\{n\} -p}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Restores stash  number 'n'}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash a}pply stash@\{n\}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Discards stash  number 'n'}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash d}rop stash@\{n\}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{Restores the most recently stashed files }}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash p}op}} \tn
+			
+			\hhline{>{\arrayrulecolor{DarkBackground}}-}
+		\end{tabularx}
+		
+			\par\addvspace{1.3em}
+		
+		\begin{tabularx}{5.377cm}{X}
+			\SetRowColor{DarkBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf\textcolor{white}{Oh Shit, Git!}}  \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{I did something terribly wrong, please tell me git has a magic time machine!?!}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{r}ef\textcolor{red}{l}og}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\emph{
+			\# you will see a list of every thing you've done in git, across all branches! \\
+			\# each one has an index HEAD@\{index\} \\
+			\# find the one before you broke everything}}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{r}eset HEAD@\{index\}}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\emph{\# magic time machine}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{I committed and immediately realized I need to make one small change!}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\emph{\# make your change}}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{a}dd . \# or add individual files}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}ommit --\textcolor{red}{a}mend }} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\emph{\# follow prompts to change or keep the commit message \\
+			\# now your last commit contains that change!}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{I need to change the message on my last commit!}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}ommit --\textcolor{red}{a}mend }} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\emph{\# follow prompts to change or keep the commit message}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{I accidentally committed something to master that should have been on a brand new branch!}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\emph{\# create a new branch from the current state of master}}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch \emph{branch-name}}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\emph{\# remove the commit from the master branch}}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{r}eset HEAD\~ --hard }} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heckout \emph{branch-name}}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\emph{\# your commit lives in this branch now}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\bf{I accidentally committed to the wrong branch!}}} \tn
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\emph{\# undo the last commit, but leave the changes available}}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{r}eset HEAD\~ --soft}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash}}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\emph{\# move to the correct branch}}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heckout \emph{branch-name}}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{stash p}op}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{a}dd . \emph{\# or add individual files}}} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}ommit -\textcolor{red}{m} "your message here" }} \tn
+			\mymulticolumn{1}{x{5.377cm}}{{\emph{\# now your changes are on the correct branch}}} \tn
+			\hhline{>{\arrayrulecolor{DarkBackground}}-}
+		\end{tabularx}
+		
+			\par\addvspace{1.3em}
+		
+		% FEATURE FLOW
+		\begin{tabularx}{5.377cm}{X}
+			\SetRowColor{DarkBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf\textcolor{white}{Feature Flow}}  \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{p{5.377cm}}{\vspace{1px}\centerline{\includegraphics[width=5.1cm]{feature.PNG}}} \tn
+			\hhline{>{\arrayrulecolor{DarkBackground}}-}
+			
+			\SetRowColor{TitleBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf{Feature start}} \tn
+			
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut develop}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{pull} --\textcolor{red}{r}ebase origin develop}} \tn
+		
+				\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut  -b feature/{\emph{nomfeature}}}} \tn
+		
+				\SetRowColor{TitleBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf{Feature Share}} \tn
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin feature/\emph{nomfeature}}} \tn
+		
+				\SetRowColor{TitleBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf{Feature finish}} \tn
+		
+				\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut develop}} \tn
+		
+				\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{m}erge --\textcolor{red}{no}-\textcolor{red}{ff} feature/{\emph{nomefeature}}}} \tn
+		
+				\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch -d feature/{\emph{nomefeature}}}} \tn
+		
+				\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin develop}} \tn
+		
+				\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin :feature/{\emph{nomefeature}} (if pushed)}} \tn
+			\hhline{>{\arrayrulecolor{DarkBackground}}-}
+		\end{tabularx}
+		\par\addvspace{1.3em}
+		
+		\begin{tabularx}{5.377cm}{X}
+			\SetRowColor{DarkBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf\textcolor{white}{Hotfix Flow}}  \tn
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{p{5.377cm}}{\vspace{1px}\centerline{\includegraphics[width=5.1cm]{hotfix.PNG}}} \tn
+			\hhline{>{\arrayrulecolor{DarkBackground}}-}
+			
+			\SetRowColor{TitleBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf{Hotfix start}} \tn
+			
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut develop}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{pull} --\textcolor{red}{r}ebase origin develop}} \tn
+			
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut -b hotfix/{\emph{hotfix-version}} }} \tn
+			
+			\SetRowColor{TitleBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf{Hotfix finish}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut master} \tn
+			
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{m}erge --\textcolor{red}{no}-\textcolor{red}{ff} hotfix/\emph{hotfix-version}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{git tag -a {\emph{hotfix-version}} }} \tn
+			
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut develop}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{m}erge --\textcolor{red}{no}-\textcolor{red}{ff} hotfix/\emph{hotfix-version}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch -d hotfix/\emph{hotfix-version}}} \tn
+			
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin master}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin develop}} \tn
+			
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin --tags}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin :hotfix/\emph{hotfix-version} (if pushed)}} \tn
+		
+				\hhline{>{\arrayrulecolor{DarkBackground}}-}
+		\end{tabularx}
+		\par\addvspace{1.3em}
+		
+		
+		% RELEASE
+		\begin{tabularx}{5.377cm}{X}
+			\SetRowColor{DarkBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf\textcolor{white}{Release Flow}}  \tn
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{p{5.377cm}}{\vspace{1px}\centerline{\includegraphics[width=5.1cm]{release.PNG}}} \tn
+			\hhline{>{\arrayrulecolor{DarkBackground}}-}
+			
+			\SetRowColor{TitleBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf{Release start}} \tn
+			
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut develop}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{pull} --\textcolor{red}{r}ebase origin develop}} \tn
+			
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut -b release/{\emph{release-version}} }} \tn
+			
+			\SetRowColor{TitleBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf{Release Share}} \tn
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin feature/\emph{release-version}}} \tn
+			
+			
+			\SetRowColor{TitleBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\bf{Release finish}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut master} \tn
+			
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{m}erge --\textcolor{red}{no}-\textcolor{red}{ff} release/\emph{release-version}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{git tag -a {\emph{release-version}} }} \tn
+			
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{c}heck\textcolor{red}{o}ut develop}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{m}erge --\textcolor{red}{no}-\textcolor{red}{ff} release/\emph{release-version}}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{b}ranch -d release/\emph{release-version}}} \tn
+			
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin master}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin develop}} \tn
+			
+			\SetRowColor{white}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin --tags}} \tn
+			
+			\SetRowColor{LightBackground}
+			\mymulticolumn{1}{x{5.377cm}}{{\textcolor{red}{g}it \textcolor{red}{push} origin :release/\emph{release-version} (if pushed)}} \tn
+		\end{tabularx}
+		\par\addvspace{1.3em}
+		
+	\end{multicols*}
 
 \end{document}
